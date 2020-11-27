@@ -20,6 +20,7 @@ public class java_test8 {
 	static final boolean flag	= false;//확인용
 	public static void main(String args[]) {
 		test(START, END, flag);
+		System.exit(0);
 	}
 	
 	public static void test(int start, int end, boolean flag) {

@@ -13,6 +13,7 @@ public class java_test7 {
 	static final int LIMIT = 100;
 	public static void main(String args[]) {
 		test(LIMIT);
+		System.exit(0);
 	}
 	
 	public static void test(int limit) {

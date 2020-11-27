@@ -24,6 +24,7 @@ public class java_test3 {
 		for(int i = 0, len = data.length; i < len; i++) 
 			if(!data[i]) sum += i;
 		System.out.println("솔로넘버 총합 : " + sum);
+		System.exit(0);
 	}
 	
 	public static void d(int input) {

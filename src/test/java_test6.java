@@ -19,6 +19,7 @@ public class java_test6 {
 	static int Y = 6;
 	public static void main(String args[]) {
 		test(X, Y);
+		System.exit(0);
 	}
 	
 	public static void test(int x, int y) {

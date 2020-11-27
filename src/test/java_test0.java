@@ -40,6 +40,7 @@ public class java_test0 {
 		for(String name : dn) 
 			System.out.print(name+"  ");
 		System.out.println();
+		System.exit(0);
 	}
 	
 	public static int getMatchCount(String regex) {

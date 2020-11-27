@@ -11,6 +11,7 @@ public class java_test2 {
 	static final boolean flag = true;
 	public static void main(String args[]) {
 		test();
+		System.exit(0);
 	}
 	
 	public static void test() {

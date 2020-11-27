@@ -19,6 +19,7 @@ public class java_test1 {
 	static boolean flag = false;//확인용
 	public static void main(String args[]) {
 		test();
+		System.exit(0);
 	}
 	
 	public static void test() {

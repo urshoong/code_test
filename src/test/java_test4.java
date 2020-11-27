@@ -13,6 +13,7 @@ public class java_test4 {
 	static final int N = 100;
 	public static void main(String args[]) {
 		test();
+		System.exit(0);
 	}
 	
 	public static void test() {

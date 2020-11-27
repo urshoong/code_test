@@ -19,6 +19,7 @@ public class java_test10 {
 	static final String[] CHARS = {"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"};
 	public static void main(String args[]) {
 		test();
+		System.exit(0);
 	}
 	
 	public static void test() {
