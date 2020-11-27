@@ -9,7 +9,7 @@ import java.util.Arrays;
 입력으로 자연수 N을 받고, 출력으로 N 이하의 모든 완전수를 출력하는 코드를 작성하라.
 */
 
-public class test_java4 {
+public class java_test4 {
 	static final int N = 100;
 	public static void main(String args[]) {
 		test();

@@ -16,18 +16,20 @@ public class java_test1 {
 	static final int START = 10;
 	static final int END = 1000;
 	static int SUM = 0;
+	static boolean flag = false;//확인용
 	public static void main(String args[]) {
-		test(START, END);
+		test();
 	}
 	
-	public static void test(int S, int E) {
-		for(int i = S; i <= E;i++) {
-			int TEMP = 0;
+	public static void test() {
+		for(int i = START; i <= END;i++) {
+			int TEMP = 1;
 			char[] C = (""+i).toCharArray();
+			if(flag) for(char c : C) System.out.print(c+" ");
 			for(int c = 0, len = C.length; c < len; c++) {
-				if(c == 0) TEMP = Character.getNumericValue(C[c]);
-				else TEMP *= Character.getNumericValue(C[c]);
+				TEMP *= Character.getNumericValue(C[c]);
 			}
+			if(flag) System.out.println("--> "+TEMP);
 			SUM += TEMP;
 		}
 		System.out.println("SUM : " + SUM);

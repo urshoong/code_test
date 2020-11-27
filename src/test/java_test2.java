@@ -8,13 +8,14 @@ package test;
 
 public class java_test2 {
 	static final int LIMIT = 10000;
+	static final boolean flag = true;
 	public static void main(String args[]) {
-		test(LIMIT);
+		test();
 	}
 	
-	public static void test(int L) {
+	public static void test() {
 		int TOTAL = 0;
-		for(int i = 1; i < L; i++) 
+		for(int i = 1; i < LIMIT; i++) 
 			for(char c : (String.valueOf(i)).toCharArray()) 
 				if(c == '8') TOTAL++;
 		System.out.println("TOTAL 8 COUNT IS : " + TOTAL);
