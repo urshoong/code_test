@@ -47,7 +47,6 @@ public class java_test11 {
 			int size = Math.abs(Integer.parseInt(gubun));
 			boolean side = Integer.parseInt(gubun) > 0 ? true : false;
 			String temp = "";
-			System.out.println("size : " + size + " side : " + side);
 			for(int i = 0; i < size; i++) {
 				if(side) {
 					temp = list.getLast();
