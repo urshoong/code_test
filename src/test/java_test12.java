@@ -50,7 +50,7 @@ public class java_test12 {
 			}
 		}
 		total = Collections.max(counters);
-		System.out.println("총 소요 시간 : " + total);
+		System.out.println("\n총 소요 시간 : " + total);
 		getCounters(counters, -1);
 	}
 	
