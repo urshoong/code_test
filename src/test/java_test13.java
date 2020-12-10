@@ -39,6 +39,7 @@ N이 3보다 클 경우, 크기 N의 패턴은 공백으로 채워진 가운데�
 ***************************
 */
 public class java_test13 {
+	public static final int LIMIT = 3;
 	public static long START = 0;
 	public static long END = 0;
 	public static int TEMP = 0;
@@ -59,7 +60,7 @@ public class java_test13 {
 	
 	public static void setSize() {
 		if(SIZE == 999) exit();
-		else if(SIZE % 3 != 0) { Start(); return; }
+		else if(SIZE % LIMIT != 0) { Start(); return; }
 		int pow = getPow(SIZE);
 		if(pow >= 1 && pow<= 8) {
 			System.out.println("입력 : " + SIZE + " 지수 : " + pow);
@@ -77,14 +78,14 @@ public class java_test13 {
 		int temp = size, cnt = 0;
 		while(temp != 1) {
 			cnt++;
-			temp = temp / 3;
+			temp = temp / LIMIT;
 		}
 		return cnt;
 	}
 	
 	public static void setSquare(int xsize, int ysize) {
 		int tx = 0, ty = 0, xx = 0, yy = 0;
-		TEMP /= 3;
+		TEMP /= LIMIT;
 		for(int x = 0; x < SIZE; x++) {
 			xx = (x == 0) ? 0 : (x % xsize);
 			tx = (xx == 0) ? 0 : xx / TEMP;
