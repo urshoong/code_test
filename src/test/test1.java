@@ -28,11 +28,11 @@ public class test1 {
 	
 	public static void main(String[] args) {
 		test1 test1 = new test1();
-		
+		/*
 		Executors.newSingleThreadExecutor().execute(()->{
 			test1.test();
 		});
-
+//		*/
 		/*
 		Executors.newSingleThreadExecutor().execute(new Runnable() {
 			@Override
@@ -40,6 +40,8 @@ public class test1 {
 				test1.generator1();
 			}
 		});
+//		*/
+//		/*
 		Executors.newSingleThreadExecutor().execute(()->{
 			test1.generator1();
 		});
@@ -49,7 +51,7 @@ public class test1 {
 		Executors.newSingleThreadExecutor().execute(()->{
 			test1.generator3();
 		});
-		*/
+//		*/
 		
 //		if(isRun == 3) System.exit(0); //프로그램 종료
 //		test1.exitProgram();
